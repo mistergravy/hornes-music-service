@@ -1,11 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 
-const title = 'DOr does it no';
-
-ReactDOM.render(
-  <div>{title}</div>,
-  document.getElementById('app')
-);
-
-module.hot.accept();
+ReactDOM.render(<App />, document.getElementbyId('root'))
