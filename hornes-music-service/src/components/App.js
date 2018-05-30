@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Landing from './Landing.js'
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-      <p>also, poop and cat sounds</p>
+      <Landing />
       </div>
     );
   }

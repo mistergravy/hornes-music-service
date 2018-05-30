@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.js';
+// import App from './components/App.js';
+// import '../node_modules/bootswatch/dist/materia/bootstrap.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import AppRouter from './routers/AppRouter.js'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<AppRouter />, document.getElementById('root'))
