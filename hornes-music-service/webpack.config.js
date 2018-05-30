@@ -1,17 +1,17 @@
+var path = require('path');
 const webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
-    'react-hot-loader/patch',
     './src/index.js'
   ],
   module: {
     rules: [
-      {
-        exclude: /node_modules/
-
-      },
-      { test: /\.(jsx)$/, use: 'babel-loader' },
+      // {
+      //   exclude: /node_modules/
+      // },
+      { test: /\.(js|jsx)$/, exclude: /node_modules/, use: 'babel-loader' },
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
       { test: /\.(png|svg|jpg|gif)$/, use: ['file-loader']}
     ]
