@@ -5,7 +5,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-      hello
+      <p>also, poop and cat sounds</p>
       </div>
     );
   }
