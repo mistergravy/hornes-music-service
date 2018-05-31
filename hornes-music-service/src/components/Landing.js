@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// import Jumbotron from './node_modules/lib/Jumbotron.js'
+import {Jumbotron} from 'react-bootstrap';
 
 class Landing extends React.Component {
   render() {
     return (
-    <div>hi there, my name is jared</div>
+      <Jumbotron>
+        <div>hi there, my name is jared</div>
+      </Jumbotron>
 
     )
   }

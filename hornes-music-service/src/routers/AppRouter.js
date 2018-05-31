@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 
+
 // import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-// import Landing from '../components/Landing.js';
+import Landing from '../components/Landing.js';
 
 
 const AppRouter = () => (
