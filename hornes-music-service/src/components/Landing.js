@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Jumbotron, Grid, Row, Col, Image} from 'react-bootstrap';
-import PhotoGallery from './PhotoGallery.js';
+import PhotoGallery from './PhotoGallery'
 
-// import './src/styles/App.css';
 
 class Landing extends React.Component {
   render() {
@@ -54,11 +53,10 @@ class Landing extends React.Component {
           </Grid>
       </Jumbotron>
       </div>
-
       <div>
-      <PhotoGallery />
+        <PhotoGallery />
       </div>
-   </div>
+    </div>
     )
   }
 }

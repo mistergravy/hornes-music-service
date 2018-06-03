@@ -2,24 +2,19 @@ var path = require('path');
 const webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-var DIST_DIR = path.join(__dirname, '/dist');
+var DIST_DIR = path.resolve(__dirname, '/dist');
 
 module.exports = {
-  entry: [
-    './src/index.js'
-  ],
+  entry: path.resolve(__dirname, 'src') + '/index.js',
   module: {
     rules: [
-      // {
-      //   exclude: /node_modules/
-      // },
-      { test: /\.(js|jsx)$/, exclude: /node_modules/, use: 'babel-loader' },
-      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
-      { test: /\.(png|svg|jpg|gif|woff|eot|ttf|woff2)$/, use: ['url-loader']}
+      { test: /\.(js|jsx)$/, exclude: /node_modules/, loader: 'babel-loader' },
+      { test: /\.css$/, loader: ['style-loader', 'css-loader'] },
+      { test: /\.(png|svg|jpg|jpeg|gif|woff|eot|ttf|woff2)$/, exclude: /node_modules/, loader: ['file-loader']}
     ]
   },
   resolve: {
-    extensions: ['*','.js', '.jsx']
+    extensions: ['*','.js','.jsx']
   },
   output: {
     path: DIST_DIR,

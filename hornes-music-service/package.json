@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot --port 8080"
   },
   "keywords": [],
   "author": "",
