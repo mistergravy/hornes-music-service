@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppRouter from './routers/AppRouter.js'
-
+import AppRouter from './routers/AppRouter.js';
+import App from '../src/components/App.js';
+import PhotoGallery from '../src/components/PhotoGallery.js';
 
 // import '../node_modules/bootswatch/dist/materia/bootstrap.min.css';
 

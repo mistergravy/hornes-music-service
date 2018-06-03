@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import {Jumbotron, Grid, Row, Col, Image} from 'react-bootstrap';
 import PhotoGallery from './PhotoGallery'
 
+import '../styles/index.css';
 
 class Landing extends React.Component {
   render() {
     return (
-    <div>
+    <div className="App">
       <div>
       <Jumbotron>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -54,7 +55,7 @@ class Landing extends React.Component {
       </Jumbotron>
       </div>
       <div>
-        <PhotoGallery />
+      <PhotoGallery />
       </div>
     </div>
     )
