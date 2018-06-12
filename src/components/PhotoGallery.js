@@ -20,16 +20,16 @@ class PhotoGallery extends React.Component {
     <div className="container">
      <Carousel>
        <Carousel.Item>
-         <Image className="card-img" width={800} height={300} src={strings} rounded/>
+         <Image className="carousel-inner" width={800} height={300} src={strings} responsive/>
        </Carousel.Item>
        <Carousel.Item>
-         <Image className="card-img" width= {800} height={300} src={hammers} rounded/>
+         <Image className="carousel-inner" width= {800} height={300} src={hammers} rounded/>
        </Carousel.Item>
        <Carousel.Item>
-         <Image className="card-img" width= {800} height={300} src={steinway} rounded/>
+         <Image className="carousel-inner" width= {800} height={300} src={steinway} rounded/>
        </Carousel.Item>
        <Carousel.Item>
-         <Image className="card-img" width= {800} height={300} src={keybed} rounded/>
+         <Image className="carousel-inner" width= {800} height={300} src={keybed} rounded/>
        </Carousel.Item>
      </Carousel>
     </div>
