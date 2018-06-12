@@ -20,7 +20,7 @@ class PhotoGallery extends React.Component {
     <div className="container">
      <Carousel>
        <Carousel.Item>
-<<<<<<< HEAD
+
          <Image className="carousel-inner" width={800} height={300} src={strings} responsive/>
        </Carousel.Item>
        <Carousel.Item>
@@ -31,7 +31,7 @@ class PhotoGallery extends React.Component {
        </Carousel.Item>
        <Carousel.Item>
          <Image className="carousel-inner" width= {800} height={300} src={keybed} rounded/>
-=======
+
          <Image  className="carousel-inner" src={strings} />
        </Carousel.Item>
        <Carousel.Item>
@@ -42,7 +42,7 @@ class PhotoGallery extends React.Component {
        </Carousel.Item>
        <Carousel.Item>
          <Image  className="carousel-inner" src={keybed}/>
->>>>>>> 8f98603cb7fbe41c778fae39987fe53bd03b5a89
+
        </Carousel.Item>
      </Carousel>
     </div>
